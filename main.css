@@ -1,0 +1,305 @@
+body {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  border: 1px solid #3594c0;
+}
+
+.grid-c {
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-areas: "header" "main1" "main2" "main3" "footer";
+}
+
+.grid-c .grid-header {
+  grid-area: header;
+  color: #bcc1c5;
+}
+
+.grid-c .grid-header img {
+  vertical-align: text-bottom;
+}
+
+.grid-c .grid-header a:link {
+  color: #bcc1c5;
+  background-color: transparent;
+  text-decoration: underline;
+  vertical-align: text-top;
+}
+
+.grid-c .grid-header a:hover,
+.grid-c .grid-header a:active,
+.grid-c .grid-header a:visited {
+  color: #aaa5a5;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.grid-c .grid-header a:last-child {
+  text-decoration: none;
+}
+
+.grid-c .grid-main1 {
+  grid-area: main1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.grid-c .flex-main-top > div:nth-child(1) #yearly7:after, .grid-c .flex-main-top > div:nth-child(1) #yearly6:after, .grid-c .flex-main-top > div:nth-child(1) #yearly5:after, .grid-c .flex-main-top > div:nth-child(1) #yearly4:after, .grid-c .flex-main-top > div:nth-child(1) #yearly3:after, .grid-c .flex-main-top > div:nth-child(1) #yearly2:after, .grid-c .flex-main-top > div:nth-child(1) #yearly1:after {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.grid-c .flex-main-top {
+  border: 1px solid #e7f1fc;
+  background-color: #eef8ff;
+  border-radius: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grid-c .flex-main-top > div:nth-child(1) {
+  text-align: left;
+  height: max-content;
+  border-right: 1px solid #c5d3de;
+  padding-left: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #a8aeb3;
+}
+
+.grid-c .flex-main-top > div:nth-child(1) input {
+  vertical-align: text-bottom;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.grid-c .flex-main-top > div:nth-child(1) input[type="radio"]:checked:after {
+  border: 2px solid #fd5b5c;
+}
+
+.grid-c .flex-main-top > div:nth-child(1) #yearly1:after {
+  background-color: #e30013;
+}
+
+.grid-c .flex-main-top > div:nth-child(1) #yearly2:after {
+  background-color: #3b3b3b;
+}
+
+.grid-c .flex-main-top > div:nth-child(1) #yearly3:after {
+  background-color: #e3c400;
+}
+
+.grid-c .flex-main-top > div:nth-child(1) #yearly4:after {
+  background-color: #ffffff;
+}
+
+.grid-c .flex-main-top > div:nth-child(1) #yearly5:after {
+  background-color: #76e300;
+}
+
+.grid-c .flex-main-top > div:nth-child(1) #yearly6:after {
+  background-color: #e300a0;
+}
+
+.grid-c .flex-main-top > div:nth-child(1) #yearly7:after {
+  background-color: #e37000;
+}
+
+.grid-c .flex-main-top > div:nth-child(2) {
+  text-align: center;
+  height: max-content;
+  border-right: 1px solid #c5d3de;
+  font-size: 12px;
+  font-weight: 700;
+  color: #a8aeb3;
+}
+
+.grid-c .flex-main-top > div:nth-child(2) input {
+  vertical-align: text-bottom;
+  margin-left: 5px;
+  height: 14px;
+  width: 14px;
+}
+
+.grid-c .flex-main-top > div:nth-child(2) input[type="checkbox"]:after {
+  width: 14px;
+  height: 14px;
+  background-color: #c5d3de;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.grid-c .flex-main-top > div:nth-child(2) input[type="checkbox"]:checked:after {
+  background-image: url("images/check.png");
+}
+
+.grid-c .flex-main-top > div:last-child {
+  text-align: right;
+  font-size: 12px;
+  font-weight: 700;
+  color: #a8aeb3;
+}
+
+.grid-c .flex-main-top > div:last-child > div > div:nth-child(2) {
+  margin-left: 5px;
+  max-width: 32px;
+  color: #f9585a;
+  border-bottom: 1px dashed;
+}
+
+.grid-c .flex-main-top > div:last-child > div > div:last-child {
+  max-width: 15px;
+}
+
+.grid-c .flex-main-top > div:last-child img {
+  width: 100%;
+}
+
+.grid-c .grid-main2 {
+  grid-area: main2;
+}
+
+.grid-c .flex-main-body {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.grid-c .flex-main-body > div {
+  width: 160px;
+  text-align: center;
+  border: 1px solid #d0dbe6;
+  border-radius: 8px;
+  padding-top: 10px;
+}
+
+.grid-c .flex-main-body > div .title {
+  color: #58b8dc;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  height: 44px;
+}
+
+.grid-c .flex-main-body > div .description {
+  color: #a1a1a1;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 10px;
+  height: 66px;
+}
+
+.grid-c .flex-main-body .cost div:first-child {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.grid-c .flex-main-body .cost div:last-child {
+  color: #a1a1a1;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 0px;
+  height: max-content;
+}
+
+.grid-c .flex-main-body .last-cost {
+  width: max-content;
+  height: max-content;
+  margin-bottom: 0px;
+  color: #a1a1a1;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.grid-c .flex-main-body > div > div img {
+  position: absolute;
+  z-index: 2;
+  margin-top: 9px;
+}
+
+.grid-c .flex-main-body .count {
+  margin-bottom: 10px;
+  width: 125px;
+  border-radius: 20px;
+  background-color: #eef8ff;
+}
+
+.grid-c .flex-main-body .count div:first-child {
+  border: 1px solid #cfd1d2;
+  border-radius: 20px;
+  padding: 5px;
+  vertical-align: middle;
+  margin-right: 2px;
+  min-width: 63px;
+}
+
+.grid-c .flex-main-body .count div:last-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f73d3c;
+  margin-left: 2px;
+}
+
+.grid-c .flex-main-body .count div:last-child svg {
+  padding-top: 8px;
+  color: white;
+}
+
+.grid-c .grid-main3 {
+  grid-area: main3;
+}
+
+.grid-c .flex-main-footer {
+  border: 1px solid #e5f0fb;
+  background-color: #eef8ff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+}
+
+.grid-c .flex-main-footer div > div {
+  color: #a1a1a1;
+  font-weight: 600;
+  font-size: 15px;
+  width: max-content5;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.grid-c .flex-main-footer div > div a:link {
+  text-decoration: underline;
+  color: #a1a1a1;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.grid-c .flex-main-footer div > div a:hover,
+.grid-c .flex-main-footer div > div a:active,
+.grid-c .flex-main-footer div > div a:visited {
+  text-decoration: none;
+  color: #a1a1a1;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.grid-c .grid-footer {
+  grid-area: footer;
+}
